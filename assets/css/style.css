@@ -1,0 +1,96 @@
+body, html {	/*the outer layer of the site and global style attributes*/
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    }
+
+.front-page {
+    display:flex;
+    flex-direction: column;
+}
+
+.top-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background: black;
+}
+
+.bottom-page {
+    width: 100%;
+    height: 150%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background: white;
+}
+
+#chris-text {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    display: flex;
+    font-size: 1700%;
+}
+
+.about-box {
+    right:  10%;
+    padding: 2%;
+    align-items: right;
+    /* text-align: right; */
+    align-self: right;
+    position:fixed;
+    /* justify-content: right; */
+}
+
+#about-text-black {
+    text-align: right;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    display: flex;
+    font-size: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#about-text-white {
+    text-align: right;
+    font-family: 'Homenaje', sans-serif;
+    color: white;
+    display: flex;
+    font-size: 130%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+/* specific page styles */
+
+.specific-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+}
+
+#left-side {
+    width: 40%;
+    height: 70%;
+    padding: 2%;
+    /* border: 5px; */
+    border-style: solid;
+    margin-top: 5%;
+}
+
+#right-side {
+    width: 40%;
+    height: 70%;
+    padding: 2%;
+    /* border-style: solid; */
+    /* border: 5px; */
+    border-style: solid;
+    margin-top: 5%;
+}
