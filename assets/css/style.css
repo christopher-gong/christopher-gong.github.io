@@ -28,11 +28,42 @@ body, html {	/*the outer layer of the site and global style attributes*/
     background: white;
 }
 
-#chris-text {
+.chris-text {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
     display: flex;
     font-size: 1700%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: cover;
+}
+
+.berkeleytreesbkgnd {
+    background-image: url('../img/berkeleytrees.jpg');
+}
+
+.libbkgnd {
+    background-image: url('../img/lib.jpg');
+}
+
+.bwpotatobkgnd {
+    background-image: url('../img/bwpotato.JPG');
+}
+
+.patternbkgnd {
+    background-image: url('../img/pattern.JPG');
+}
+
+.nestbkgnd {
+    background-image: url('../img/nest.jpg');
+}
+
+.pondbkgnd {
+    background-image: url('../img/pond.jpg');
+}
+
+.waterbkgnd {
+    background-image: url('../img/water.jpg');
 }
 
 .about-box {
@@ -93,4 +124,14 @@ body, html {	/*the outer layer of the site and global style attributes*/
     /* border: 5px; */
     border-style: solid;
     margin-top: 5%;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
