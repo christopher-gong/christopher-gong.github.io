@@ -1,0 +1,65 @@
+body, html {	/*the outer layer of the site and global style attributes*/
+    background-color: black;
+    }
+
+.image {
+    width: 100%;
+    font-size: 1600%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    line-height: 1.25;
+    display: flex;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 50%;
+    height: 50%;
+    background-size: cover;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.berkeleytreesbkgnd {
+    background-image: url('../img/berkeleytrees.jpg');
+    /* background-size: initial; */
+}
+
+.libbkgnd {
+    background-image: url('../img/lib.jpg');
+}
+
+.bwpotatobkgnd {
+    background-image: url('../img/bwpotato.JPG');
+}
+
+.patternbkgnd {
+    background-image: url('../img/pattern.JPG');
+}
+
+.nestbkgnd {
+    background-image: url('../img/nest.jpg');
+}
+
+.pondbkgnd {
+    background-image: url('../img/pond.jpg');
+}
+
+.waterbkgnd {
+    background-image: url('../img/water.jpg');
+}
+
+.btn {
+    width: 60px;
+    height: 20px;
+}
+
+.chris-text {
+    width: 50%;
+    height: 50%;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
