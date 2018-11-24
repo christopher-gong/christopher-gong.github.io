@@ -24,7 +24,7 @@ body, html {	/*the outer layer of the site and global style attributes*/
     width: 100%;
     height: 150%;
     display: flex;
-    align-items: center;
+    /* align-items: flex-start; */
     justify-content:center;
     background: white;
 }
@@ -67,7 +67,50 @@ body, html {	/*the outer layer of the site and global style attributes*/
     padding-left: 30px;
 }
 
+.floater-box {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    /* margin-top: 2%; */
+}
 
+.floater {
+    width: 25%;
+    box-shadow: 10px 10px 30px grey;
+    position: relative;
+    margin: 1%;
+    transition: all 0.2s;
+}
+
+.floater:hover {
+    transform: scale(1.1);
+    opacity: 0.6;
+}
+
+#f1 {
+    position: relative;
+    /* right: 5%; */
+    left: 40%;
+}
+
+#f2 {
+    position: relative;
+    /* left: 15%; */
+    top: 30%;
+}
+
+#f3 {
+    position: relative;
+    /* right: 20%; */
+    top: 40%;
+}
+
+#f4 {
+    position: relative;
+    top: 40%;
+    left: 20%;
+}
 
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
