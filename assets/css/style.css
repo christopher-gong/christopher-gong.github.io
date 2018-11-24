@@ -88,28 +88,53 @@ body, html {	/*the outer layer of the site and global style attributes*/
     opacity: 0.6;
 }
 
+.floater:hover .floater-text {
+    opacity: 1;
+}
+
+.floater-image {
+    width: 100%;
+}
+
+.floater-text {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 250%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    text-align: center;
+    width: 100%;
+    /* padding:  0; */
+}
+
 #f1 {
     position: relative;
     /* right: 5%; */
     left: 40%;
+    /* width: 20%; */
 }
 
 #f2 {
     position: relative;
-    /* left: 15%; */
-    top: 30%;
+    left: 20%;
+    top: 5%;
 }
 
 #f3 {
     position: relative;
-    /* right: 20%; */
-    top: 40%;
+    left: 55%;
+    bottom: 20%;
 }
 
 #f4 {
     position: relative;
-    top: 40%;
-    left: 20%;
+    /* top: 40%; */
+    bottom: 10%;
+    left: 35%;
 }
 
 .noselect {
