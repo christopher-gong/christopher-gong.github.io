@@ -79,6 +79,9 @@ body, html {	/*the outer layer of the site and global style attributes*/
     padding-left: 30px;
 }
 
+.heyitsme {
+    width: 100%;
+}
 .floater-box {
     /* display: flex; */
     /* flex-direction: column; */
