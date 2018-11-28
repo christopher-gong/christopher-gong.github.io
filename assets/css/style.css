@@ -3,6 +3,7 @@ body, html {	/*the outer layer of the site and global style attributes*/
     height: 100%;
     width: 100%;
     position: relative;
+    scroll-behavior: smooth;
     }
 
 .front-page {
@@ -10,9 +11,80 @@ body, html {	/*the outer layer of the site and global style attributes*/
     flex-direction: column;
 }
 
+
+
+.top-bar {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    /* background-color: #b6e3ca; */
+}
+
+.top-bar-left {
+
+width: 40%;
+
+height: 100%;
+}
+
+.top-bar-right {
+    
+justify-content: space-around;
+    
+align-items: center;
+    
+display: flex;
+    
+height: 100%;
+    
+width: 20%;
+    
+margin-right: 4%;
+}
+
+.top-bar-selectable {
+    font-family: 'Open Sans', sans-serif;
+    padding: 1%;
+}
+
+a {
+
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.top-links {
+    transition: all 0.4s;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.top-links:hover {
+    border-color: black;
+    border-radius: 7px;
+}
+
 .top-page {
     /* position: absolute; */
-    width: 100%;
+    display: inline-block;
     height: 100%;
     /* display: flex; */
     align-items: center;
@@ -25,20 +97,22 @@ body, html {	/*the outer layer of the site and global style attributes*/
 .right-side {
     margin-top: 5%;
     width: 50%;
-    height: 90%;
-    display: flex;
+    height: 80%;
+    display:block;
     flex-direction: column;
     /* align-items: flex-start; */
     justify-content:center;
 }
 
 .bottom-page {
+    background: linear-gradient(#dae9e1, #9198e5);
+    /* background: linear-gradient(#dae9e1, #dae9e1); */
     width: 100%;
-    height: 150%;
+    height: 170%;
     display: flex;
     /* align-items: flex-start; */
     justify-content:center;
-    background: white;
+    /* background: white; */
 }
 
 .bitmoji {
@@ -57,6 +131,7 @@ body, html {	/*the outer layer of the site and global style attributes*/
     padding: 1%;
     position: relative;
     margin-left: 7%;
+    margin-top: 0;
     font-size: 200%;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
@@ -72,15 +147,45 @@ body, html {	/*the outer layer of the site and global style attributes*/
 }
 
 .name {
-    width: 200px;
-    position: fixed;
+    padding: 1%;
+    height: 100%;
+    /* width: 200px; */
+    position: absolute;
     align-items: center;
     justify-content:center;
     padding-left: 30px;
 }
 
 .heyitsme {
+    padding-top: 7%;
     width: 100%;
+    display: block;
+    /* padding-top: 10%; */
+}
+
+.down {
+    
+position: relative;
+    
+width: 4%;
+    
+display: block;
+    
+margin-left: auto;
+    
+margin-right: auto;
+    
+/* width: 50%; */
+    
+/* padding-left: 47.5%; */
+    
+/* padding-right: 47.5%; */
+transition: all 0.2s;
+
+}
+
+.down:hover {
+    transform: scale(1.1);
 }
 .floater-box {
     /* display: flex; */
@@ -88,6 +193,7 @@ body, html {	/*the outer layer of the site and global style attributes*/
     /* justify-content: flex-start; */
     /* align-items: center; */
     /* margin-top: 2%; */
+    /* height: 140%; */
 }
 
 .floater {
@@ -130,26 +236,88 @@ body, html {	/*the outer layer of the site and global style attributes*/
     position: relative;
     /* right: 5%; */
     left: 40%;
+    top: 5%;
     /* width: 20%; */
 }
 
 #f2 {
     position: relative;
-    left: 20%;
-    top: 5%;
+    left: 17%;
+    top: 10%;
 }
 
 #f3 {
     position: relative;
     left: 55%;
-    bottom: 20%;
+    bottom: 44%;
 }
 
 #f4 {
     position: relative;
     /* top: 40%; */
-    bottom: 10%;
-    left: 35%;
+    bottom: 45%;
+    left: 50%;
+}
+
+/* specific page styles */
+
+.specific-page {
+    background-color: #dae9e1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+}
+
+#left-side {
+    width: 40%;
+    height: 70%;
+    padding: 2%;
+    padding-left: 0;
+    /* border: 5px; */
+    /* border-style: solid; */
+    margin-top: 5%;
+}
+
+#right-side {
+    width: 40%;
+    height: 70%;
+    /* padding: 2%; */
+    /* border-style: solid; */
+    /* border: 5px; */
+    /* border-style: solid; */
+    margin-top: 5%;
+}
+
+.title-text {
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding-bottom: 5%;
+}
+
+.desc-text {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    line-height: 2;
+}
+
+/* specifc specific page styles */
+.mobilepic {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.mobilepicme {
+    /* width: 100%; */
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20%;
+    height: 100%;
 }
 
 .noselect {
